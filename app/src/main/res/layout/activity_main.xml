@@ -8,36 +8,51 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="417dp"
+        android:layout_width="411dp"
         android:layout_height="417dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="309dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/beyonce" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/big" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="308dp"
-        android:layout_height="56dp"
-        android:layout_marginTop="110dp"
-        android:layout_marginBottom="176dp"
-        android:text="image of beyonce who is a multitalented lady"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="327dp"
+        android:layout_height="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Best smile ever one can give"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="499dp" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="323dp"
-        android:layout_marginTop="97dp"
+        android:layout_width="95dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="209dp"
+        android:layout_marginTop="92dp"
         android:text="Next"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="94dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginBottom="20dp"
+        android:text="Previous"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
